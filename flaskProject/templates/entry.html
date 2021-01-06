@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<form method='POST' action='/search4'>
+<table>
+<p>👇这里可以查询单词中出现的元音字母📖</p>
+<tr><td>要查的单词</td><td><input name='phrase' type='TEXT' width='60'></td></tr>
+<tr><td>元音</td><td><input name='letters' type='TEXT' value='aeiou'></td></tr>
+</table>
+<p>⬇️点击提交！</p>
+<p><input value='点我✌️' type='SUBMIT'></p>
+</form>
+
+{% endblock %}

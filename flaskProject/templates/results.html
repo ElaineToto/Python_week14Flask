@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<p>👇你输入的查询为📖</p>
+<table>
+<tr><td>你输入的单词</td><td>{{ the_phrase }}</td></tr>
+<tr><td>元音</td><td>{{ the_letters }}</td></tr>
+</table>
+
+<p>👉你输入的"{{the_phrase }}" 在元音 "{{ the_letters }}"中出现的🈶️：</p>
+<h3>{{ the_results }}</h3>
+
+<form action='/viewlog'>
+<input type="submit" value="查看日志">
+</form>
+{% endblock %}
